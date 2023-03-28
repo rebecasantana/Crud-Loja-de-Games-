@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
 import com.generation.games.model.Produto;
-import com.generation.games.repository.CategoriaRepository;
+import com.generation.games.repository.UsuarioRepository;
 import com.generation.games.repository.ProdutoRepository;
 
 @RestController
@@ -33,7 +33,7 @@ public class ProdutoController {
 	private ProdutoRepository produtoRepository;
 	
 	@Autowired
-	private CategoriaRepository categoriaRepository;
+	private UsuarioRepository categoriaRepository;
 	
 	@GetMapping
 	public ResponseEntity<List<Produto>> getAll(){
